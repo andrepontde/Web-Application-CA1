@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<?xml-stylesheet type="text/xsl" href="../pages/products.xsl"?>
+
+<!-- 
+Product names were retrieved from real graphical processors, they were retrieved from the following sources:
+
+NVIDIA. (n.d.). Stream Like a Boss With NVIDIA RTX Graphics Card. [online] Available at: https://www.nvidia.com/en-us/geforce/rtx/.
+
+AMD. (2024). AMD RadeonTM RX Graphics Cards. [online] Available at: https://www.amd.com/en/products/graphics/desktops/radeon.html.
+
+-->
+
+<!--Brand code:
+1xx-xx for NVIDIA
+2xx-xx for AMD
+Generation:
+NVIDIA 40 series: 14x-xx
+NVIDIA 30 series: 13x-xx
+NVIDIA 20 series: 12x-xx
+AMD 7000 series: 27x-xx
+AMD 6000 series: 26x-xx
+Special versions:
+Ti or XT variants get a 1 as the third digit in xxx-xx (141-90 for an NVIDIA 4090 Ti).
+Super or other special versions get 2 as the third digit (142-70 for an NVIDIA 4070 Super).
+-->
+
+
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="products.xsd">
+	
+    <!-- NVIDIA 50 Series -->
+    <product code="151-90">
+        <name>RTX 5090 Ti</name>
+        <stockStatus>Pre-order</stockStatus>
+		<expirationDate/>
+        <unitPrice>2000.00</unitPrice>
+        <ratings>4.9</ratings>
+        <image>../images/50000.jpg</image>
+    </product>
+    <product code="150-90">
+        <name>RTX 5090</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate/>
+        <unitPrice>1800.00</unitPrice>
+        <ratings>4.8</ratings>
+        <image>../images/5080.jpg</image>
+    </product>
+    <product code="150-80">
+        <name>RTX 5080</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate/>
+        <unitPrice>1600.00</unitPrice>
+        <ratings>4.7</ratings>
+        <image>../images/5000.jpg</image>
+    </product>
+
+    <!-- NVIDIA 40 Series -->
+    <product code="141-90">
+        <name>RTX 4090 Ti</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>1500.00</unitPrice>
+        <ratings>4.8</ratings>
+        <image>../images/4060.jpg</image>
+    </product>
+    <product code="140-90">
+        <name>RTX 4090</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>1400.00</unitPrice>
+        <ratings>4.7</ratings>
+        <image>../images/4060.jpg</image>
+    </product>
+    <product code="140-80">
+        <name>RTX 4080</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate/>
+        <unitPrice>1200.00</unitPrice>
+        <ratings>4.6</ratings>
+        <image>../images/3070.jpg</image>
+    </product>
+    <product code="141-70">
+        <name>RTX 4070 Ti</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>900.00</unitPrice>
+        <ratings>4.5</ratings>
+        <image>../images/3070.jpg</image>
+    </product>
+    <product code="142-70">
+        <name>RTX 4070 Super</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>850.00</unitPrice>
+        <ratings>4.4</ratings>
+        <image>../images/2080.jpg</image>
+    </product>
+    <product code="140-60">
+        <name>RTX 4060</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>450.00</unitPrice>
+        <ratings>4.2</ratings>
+        <image>../images/2080.jpg</image>
+    </product>
+    <product code="141-50">
+        <name>RTX 4050 Ti</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate/>
+        <unitPrice>300.00</unitPrice>
+        <ratings>4.1</ratings>
+        <image>../images/1650.jpg</image>
+    </product>
+
+    <!-- NVIDIA 30 Series -->
+    <product code="131-90">
+        <name>RTX 3090 Ti</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>1300.00</unitPrice>
+        <ratings>4.8</ratings>
+        <image>../images/2080.jpg</image>
+    </product>
+    <product code="130-80">
+        <name>RTX 3080</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>700.00</unitPrice>
+        <ratings>4.7</ratings>
+        <image>../images/2080.jpg</image>
+    </product>
+    <product code="132-70">
+        <name>RTX 3070 Super</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>600.00</unitPrice>
+        <ratings>4.6</ratings>
+        <image>../images/3070.jpg</image>
+    </product>
+    <product code="131-60">
+        <name>RTX 3060 Ti</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>500.00</unitPrice>
+        <ratings>4.5</ratings>
+        <image>../images/3050.jpg</image>
+    </product>
+    <product code="130-50">
+        <name>RTX 3050</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>400.00</unitPrice>
+        <ratings>4.3</ratings>
+        <image>../images/2080.jpg</image>
+    </product>
+
+    <!-- NVIDIA 20 Series -->
+    <product code="121-80">
+        <name>RTX 2080 Ti</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>800.00</unitPrice>
+        <ratings>4.6</ratings>
+        <image>../images/2080.jpg</image>
+    </product>
+    <product code="120-70">
+        <name>RTX 2070</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>500.00</unitPrice>
+        <ratings>4.4</ratings>
+        <image>../images/2090.jpg</image>
+    </product>
+    <product code="121-60">
+        <name>RTX 2060 Ti</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate/>
+        <unitPrice>450.00</unitPrice>
+        <ratings>4.3</ratings>
+        <image>../images/2060.jpg</image>
+    </product>
+    <product code="120-50">
+        <name>RTX 2050</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>350.00</unitPrice>
+        <ratings>4.1</ratings>
+        <image>../images/1650ti.jpg</image>
+    </product>
+
+    <!-- NVIDIA 10 Series -->
+    <product code="111-80">
+        <name>GTX 1080 Ti</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>400.00</unitPrice>
+        <ratings>4.7</ratings>
+        <image>../images/1650ti.jpg</image>
+    </product>
+    <product code="110-70">
+        <name>GTX 1070</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>300.00</unitPrice>
+        <ratings>4.5</ratings>
+        <image>../images/old1060.jpg</image>
+    </product>
+    <product code="110-60">
+        <name>GTX 1060</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>200.00</unitPrice>
+        <ratings>4.3</ratings>
+        <image>../images/old1060.jpg</image>
+    </product>
+
+    <!-- AMD 7000 Series -->
+    <product code="271-80">
+        <name>RX 7800 XT</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-12-31</expirationDate>
+        <unitPrice>800.00</unitPrice>
+        <ratings>4.6</ratings>
+        <image>../images/7800xt.jpg</image>
+    </product>
+    <product code="270-70">
+        <name>RX 7700</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate/>
+        <unitPrice>650.00</unitPrice>
+        <ratings>4.5</ratings>
+        <image>../images/7900xt.jpg</image>
+    </product>
+
+    <!-- AMD 6000 Series -->
+    <product code="261-50">
+        <name>RX 6500 XT</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>400.00</unitPrice>
+        <ratings>4.2</ratings>
+        <image>../images/7600xt.jpg</image>
+    </product>
+    <product code="260-60">
+        <name>RX 6600</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate>2025-10-10</expirationDate>
+        <unitPrice>500.00</unitPrice>
+        <ratings>4.4</ratings>
+        <image>../images/6700xt.jpg</image>
+    </product>
+    <product code="262-80">
+        <name>RX 6800 Super</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>750.00</unitPrice>
+        <ratings>4.5</ratings>
+        <image>../images/6700xt.jpg</image>
+    </product>
+
+    <!-- AMD 5000 Series -->
+    <product code="251-50">
+        <name>RX 5700 XT</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>450.00</unitPrice>
+        <ratings>4.3</ratings>
+        <image>../images/7700xt.jpg</image>
+    </product>
+    <product code="250-50">
+        <name>RX 5700</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>400.00</unitPrice>
+        <ratings>4.2</ratings>
+        <image>../images/3050.jpg</image>
+    </product>
+
+    <!-- AMD 4000 Series -->
+    <product code="241-50">
+        <name>RX 480</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate>2025-01-01</expirationDate>
+        <unitPrice>300.00</unitPrice>
+        <ratings>4.1</ratings>
+        <image>../images/old1050.jpg</image>
+    </product>
+    <product code="240-50">
+        <name>RX 470</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>250.00</unitPrice>
+        <ratings>4.0</ratings>
+        <image>../images/old1050.jpg</image>
+    </product>
+
+    <!-- AMD 3000 Series -->
+    <product code="231-60">
+        <name>RX 3600 XT</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>180.00</unitPrice>
+        <ratings>3.8</ratings>
+        <image>../images/old1060.jpg</image>
+    </product>
+    <product code="230-50">
+        <name>RX 3500</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate/>
+        <unitPrice>160.00</unitPrice>
+        <ratings>3.7</ratings>
+        <image>../images/old1050.jpg</image>
+    </product>
+
+</products>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--Validating the root element for next complextype-->
+    <xs:element name="products" type="ProductsType"/>
+
+    <!--ComplexType for Products, this allow it for the rest of the attributes to be validated individualy afterwards, without the need of the entire code being a single "paragraph" making it way harder to read-->
+    <xs:complexType name="ProductsType">
+        <xs:sequence>
+            <xs:element name="product" type="ProductType" maxOccurs="unbounded"/>
+            <!--Validating a product, without ocurrance limit-->
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Complex Type for Product -->
+    <xs:complexType name="ProductType">
+        <xs:sequence>
+            <!--Name, date, price and image do not need a special "type" tag because they do not have any other restrictions than their data type -->
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="stockStatus" type="StockStatusType"/>
+            <xs:element name="expirationDate" type="xs:string" nillable="true"/>
+            <xs:element name="unitPrice" type="xs:decimal"/>
+            <xs:element name="ratings" type="RatingsType"/>
+            <xs:element name="image" type="xs:string" minOccurs="0"/>
+            <!--I added images as their paths in the folder, I could have added the entire data for the image, but that makes the xml too long and is harder to read and harder code for me -->
+        </xs:sequence>
+        <xs:attribute name="code" type="ProductCodeType" use="required"/>
+    </xs:complexType>
+
+    <!--SimpleType for Stock Status, defining the restrictions to only be able to accept these 3 values -->
+    <xs:simpleType name="StockStatusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="In Stock"/>
+            <xs:enumeration value="Out of Stock"/>
+            <xs:enumeration value="Pre-order"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--SimpleType for Ratings defining a numeric restriction-->
+    <xs:simpleType name="RatingsType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="5.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--SimpleType for Product Code Pattern defining a format restriction, since a product's code has to be in ***-** format-->
+    <xs:simpleType name="ProductCodeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}-\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+
+</xs:schema>

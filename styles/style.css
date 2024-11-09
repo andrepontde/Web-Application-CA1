@@ -1,0 +1,242 @@
+/*
+
+Fort this code, I used some inspiration and formatting from W3School CSS Templates, which are open source and from anonymous sources
+
+W3Schools (2020). W3.CSS Templates. [online] W3schools.com. Available at: https://www.w3schools.com/w3css/w3css_templates.asp.
+
+‌
+*/
+
+/*General Styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+body {
+    background-color:gray;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+
+
+
+/*-------------Navigation Bar for every page-----------------*/
+.navigation-bar {
+    width: 100%;
+    background-color: #2c3e50;
+    color:gainsboro;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+}
+.logo a {
+    color: #1abc9c;
+    font-size:xx-large;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navigation-bar nav a {
+    color: gainsboro;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size:large;
+}
+.navigation-bar nav a:hover {
+    color: turquoise;
+}
+
+
+
+
+
+
+/*Features Section*/
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 90px;
+    background-color: #ecf0f1;
+}
+.feature {
+    text-align: center;
+    max-width: 250px;
+}
+.featureSmall{
+    text-align: center;
+    width: 560px;
+    height: 459px;
+    border-radius: 17px;
+    padding: 25px;
+    background-color: rgb(74, 74, 74);
+    
+    
+}
+
+.featureSmall img{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: large;
+    margin: 10px 0;
+    color: black;
+}
+
+.feature p {
+    font-size: medium;
+    color: black;
+}
+
+.aboutUsSect{
+    background-color:#666 ;
+}
+
+/*----------Products section---------------*/
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#productsSection {
+    flex: 1;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color:gray;
+}
+
+
+#productTable th,
+#productTable td {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+}
+#productTable th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+#productCode {
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid white;
+    border-radius: 7px 0 0 5px;
+    width: 200px;
+}
+
+
+.product-display {
+    flex: 1;
+    background-color:  2c3e50;
+
+    padding: 20px;
+    border-radius: 9px;
+    text-align: center;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+
+
+#resultSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+#resultSection p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+#resultSection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*Info Sections */
+.info {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.info p {
+    font-size:large;
+    margin-bottom: 30px;
+}
+.info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+button, .toProds-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1abc9c;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.7s;
+}
+/*These buttons are exactly the same on purpose*/
+
+button:hover, .toProds-button:hover {
+    background-color: #16a085;
+}
+
+
+
+/*---------------Footer for all pages-----------*/
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+#contact div {
+    margin: 5px 0;
+}
